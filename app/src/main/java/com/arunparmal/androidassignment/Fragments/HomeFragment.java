@@ -248,7 +248,7 @@ public class HomeFragment extends Fragment {
                 "Description of the restaurant: like the qualities, specialitiles and the exlusive food available there"));
 
          originalrestaurantlist.add(new RestrauntModel("https://as1.ftcdn.net/v2/jpg/01/70/65/74/1000_F_170657468_pPfzg7r59gnJijN01PTZwOPHrX0X4zQk.jpg",
-                 "Domino's Pizza","4","20",new String[]{"Pizza","Burger","Chicken"},
+                 "Domino's Pizza","4","30",new String[]{"Pizza","Burger","Chicken"},
                        "Description of the restaurant: like the qualities, specialitiles and the exlusive food available there"));
 
          originalrestaurantlist.add(new RestrauntModel("https://as1.ftcdn.net/v2/jpg/01/70/65/74/1000_F_170657468_pPfzg7r59gnJijN01PTZwOPHrX0X4zQk.jpg",
@@ -260,7 +260,7 @@ public class HomeFragment extends Fragment {
                        "Description of the restaurant: like the qualities, specialitiles and the exlusive food available there"));
 
          originalrestaurantlist.add(new RestrauntModel("https://as1.ftcdn.net/v2/jpg/01/70/65/74/1000_F_170657468_pPfzg7r59gnJijN01PTZwOPHrX0X4zQk.jpg",
-                 "Jain Hotel","5","20",new String[]{"Pizza","Burger","Soup"},
+                 "Jain Hotel","5","10",new String[]{"Pizza","Burger","Soup"},
                        "Description of the restaurant: like the qualities, specialitiles and the exlusive food available there"));
 
          originalrestaurantlist.add(new RestrauntModel("https://as1.ftcdn.net/v2/jpg/01/70/65/74/1000_F_170657468_pPfzg7r59gnJijN01PTZwOPHrX0X4zQk.jpg",
