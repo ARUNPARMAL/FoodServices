@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <data>
+
+   </data>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/white"
+       tools:context=".MainActivity">
+
+      <FrameLayout
+          android:id="@+id/framelayoutdefault"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintBottom_toTopOf="@id/bottomAppBar"
+          android:paddingBottom="20dp"
+          >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:text="empty fragment"
+            android:textColor="@color/black"
+             android:textSize="20sp"
+             android:layout_gravity="center"
+            />
+
+      </FrameLayout>
+      <com.google.android.material.bottomappbar.BottomAppBar
+         android:id="@+id/bottomAppBar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:layout_gravity="bottom"
+          android:backgroundTint="@color/white"
+          app:fabCradleMargin="0dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          tools:ignore="BottomAppBar">
+
+
+         <com.google.android.material.bottomnavigation.BottomNavigationView
+             android:id="@+id/navbar"
+             style="@style/Bottomnavbar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="bottom"
+             android:layout_marginEnd="16dp"
+             android:background="@android:color/transparent"
+             android:outlineSpotShadowColor="@android:color/transparent"
+             app:itemIconTint="@color/item_tint"
+             app:menu="@menu/bottom_navigation_menu" />
+
+      </com.google.android.material.bottomappbar.BottomAppBar>
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/fabcenter"
+          android:layout_width="70dp"
+          android:layout_height="70dp"
+          android:backgroundTint="#ff0000"
+          android:layout_marginBottom="15dp"
+          android:src="@drawable/ic_center"
+          app:maxImageSize="55dp"
+          android:scaleType="center"
+          app:layout_anchorGravity="center_horizontal"
+          android:foregroundGravity="center"
+          app:fabCustomSize="70dp"
+          app:tint="@color/white"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+
+          />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

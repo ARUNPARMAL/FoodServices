@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidAssignment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_about_fragment">Hello About Fragment</string>
+    <string name="hello_saved_fragment">Hello Saved Fragment</string>
+    <string name="hello_tutorial_fragment">Hello Tutorial Fragment</string>
+</resources>

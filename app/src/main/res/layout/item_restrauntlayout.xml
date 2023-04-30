@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="restaurant"
+            type="com.arunparmal.androidassignment.model.RestrauntModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="15dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/coverimage_restnt"
+                android:layout_width="match_parent"
+                android:layout_height="143dp"
+                android:loadimage="@{restaurant.imageurl}"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/restrauntname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@{restaurant.restaurant_name}"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:textSize="21dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/coverimage_restnt"
+                />
+
+            <ImageView
+                android:id="@+id/discountimage"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/coverimage_restnt"
+                android:src="@drawable/discount"
+                app:layout_constraintEnd_toStartOf="@id/discounttext"
+                android:layout_marginEnd="7dp"
+                />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:text="@{restaurant.rating}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/coverimage_restnt"
+                android:textColor="@color/white"
+                android:backgroundTint="#1bc400"
+                android:paddingVertical="2dp"
+                android:paddingHorizontal="6dp"
+                android:layout_margin="11dp"
+                android:textStyle="bold"
+                android:drawableEnd="@drawable/rate_ic"
+                />
+
+            <TextView
+                android:id="@+id/discounttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/coverimage_restnt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#F82323"
+                android:discounttext="@{restaurant.discount_percent}"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/restrauntname"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="-10dp"
+                android:maxWidth="300dp"
+                >
+
+                <TextView
+                    android:id="@+id/category1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@{restaurant.category[0]}"
+                    />
+
+                <TextView
+                    android:id="@+id/category2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="9dp"
+                    android:text="@{restaurant.category[1]}"
+                    />
+
+                <TextView
+                    android:id="@+id/category3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="9dp"
+                    android:text="@{restaurant.category[2]}"
+                    />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>
